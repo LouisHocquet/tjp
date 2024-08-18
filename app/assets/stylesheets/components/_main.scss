@@ -1,9 +1,10 @@
 body {
-  background-color: $secondary;
+  background-color: $primary;
 }
 
-html {
-  background-color: $primary;
+.page-content {
+  background-color: $secondary;
+  min-height: 100vh;
 }
 
 .container {
