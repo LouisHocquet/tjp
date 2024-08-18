@@ -2,6 +2,10 @@ body {
   background-color: $secondary;
 }
 
+html {
+  background-color: $primary;
+}
+
 .container {
   display: flex;
   flex-direction: column;
