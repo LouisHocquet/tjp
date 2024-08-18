@@ -1,0 +1,10 @@
+body {
+  background-color: $secondary;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 32px;
+}
