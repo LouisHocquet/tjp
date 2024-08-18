@@ -12,7 +12,8 @@ $font-size-base:         1rem;
 
 // Colors
 $body-color: $gray;
-$primary:    $blue;
+$primary:    #1F1F1F;
+$secondary:    #FFDA5E;
 $success:    $green;
 $info:       $yellow;
 $danger:     $red;
@@ -26,3 +27,5 @@ $border-radius-xl:            .5rem;
 $border-radius-xxl:           1rem;
 
 // Override other variables below!
+$navbar-dark-active-color:          $secondary;
+$navbar-dark-hover-color:           rgba($secondary, .75);
