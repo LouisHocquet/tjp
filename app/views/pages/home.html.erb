@@ -1,6 +1,7 @@
 <%= render "shared/navbar" %>
 
 <div class="container">
-  <h1>Accueil</h1>
+  <h1><%= t(:hello_world) %></h1>
+  <p><%= flash[:notice] %></p>
   <%= render "shared/in_progress" %>
 </div>
