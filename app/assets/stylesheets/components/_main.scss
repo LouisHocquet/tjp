@@ -13,3 +13,15 @@ body {
   gap: 24px;
   padding-top: 32px;
 }
+
+// Breakpoints
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$x_large: 1200px;
+
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+    &{ @content; }
+  }
+}

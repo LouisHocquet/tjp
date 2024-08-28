@@ -10,3 +10,28 @@
 .navbar .navbar-brand img {
   width: 48px;
 }
+
+.locale-switch {
+  background: $body-bg;
+  width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  // @include media-min($)
+  // width: 160px;
+  // text-align: center;
+  a {
+    color: $primary;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  ul {
+    border: unset;
+    right:0 !important;
+    left:unset !important;
+    border-radius: 8px;
+  }
+}

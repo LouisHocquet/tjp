@@ -3,7 +3,18 @@ class PagesController < ApplicationController
     flash[:notice] = t(:hello_flash)
   end
 
-  def dummy_l18n
-    flash[:notice] = t(:language)
+  def register
+  end
+
+  def information
+  end
+
+  def pictures
+  end
+
+  def partners
+  end
+
+  def schedule_and_results
   end
 end
