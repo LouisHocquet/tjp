@@ -1,4 +1,17 @@
 fr:
-  hello_world: "Bonjour le monde"
-  hello_flash: "Notification"
-  language: "Français"
+  pages:
+    home:
+      title: "Accueil"
+    register:
+      title: "Inscription"
+    information:
+      title: "Informations"
+    pictures:
+      title: "Photos"
+    partners:
+      title: "Partenaires"
+    schedule_and_results:
+      title: "Calendrier et résultats"
+  shared:
+    in_progress:
+      description: "Site en cours de construction, première version dispo le 31 août 2024"

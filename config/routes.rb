@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  get '/:locale' => 'pages#home'
-  root to: "pages#home"
+  # get '/:locale' => 'pages#home'
   scope "(:locale)", locale: /en|fr/ do
-    get "dummy_l18n", to: "pages#dummy_l18n", as: :dummy_l18n
+    root to: "pages#home"
+    get "register", to: "pages#register", as: :register
+    get "information", to: "pages#information", as: :information
+    get "pictures", to: "pages#pictures", as: :pictures
+    get "partners", to: "pages#partners", as: :partners
+    get "schedule_and_results", to: "pages#schedule_and_results", as: :schedule_and_results
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

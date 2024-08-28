@@ -28,6 +28,20 @@
 #       enabled: "ON"
 
 en:
-  hello_world: "Hello world"
-  hello_flash: "Notice"
-  language: "English"
+  pages:
+    home:
+      title: "Home"
+    register:
+      title: "Register"
+    information:
+      title: "Information"
+    pictures:
+      title: "Pictures"
+    partners:
+      title: "Partners"
+    schedule_and_results:
+      title: "Schedule and Results"
+  shared:
+    in_progress:
+      description: "Site en cours de construction, première version dispo le 31 août 2024"
+      description: "Website in progress, first version will be ready on August 31st 2024"
