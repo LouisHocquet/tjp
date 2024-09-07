@@ -30,7 +30,8 @@
 en:
   pages:
     home:
-      title: "Home"
+      title: "Tournoi Jeunes de Pentecôte"
+      counter: "D"
     register:
       title: "Register"
     information:

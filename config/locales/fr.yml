@@ -1,7 +1,8 @@
 fr:
   pages:
     home:
-      title: "Accueil"
+      title: "Tournoi Jeunes de Pentecôte"
+      counter: "J"
     register:
       title: "Inscription"
     information:

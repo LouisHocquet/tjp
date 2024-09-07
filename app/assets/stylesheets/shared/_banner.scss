@@ -1,0 +1,14 @@
+.banner {
+  height: 80vh;
+  position: relative;
+}
+
+.banner-baseline {
+  background-color: rgba($color: $secondary, $alpha: 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .container {
+    gap: 0;
+  }
+}
