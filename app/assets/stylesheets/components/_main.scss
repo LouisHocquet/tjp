@@ -7,13 +7,6 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-top: 32px;
-}
-
 // Breakpoints
 $small: 576px;
 $medium: 768px;
@@ -23,5 +16,20 @@ $x_large: 1200px;
 @mixin media-min($_min-width) {
   @media screen and (min-width: $_min-width) {
     &{ @content; }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 40px;
+  @include media-min($medium) {
+    gap: 40px;
+    padding-top: 48px;
+  }
+  @include media-min($large) {
+    gap: 48px;
+    padding-top: 56px;
   }
 }

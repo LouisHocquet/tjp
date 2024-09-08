@@ -34,6 +34,12 @@ en:
       banner_days_letter: "D"
       banner_subtitle: "before 31st edition starts, register today!"
       banner_cta: "Register now"
+      pres_h2: "TJP is"
+      pres_days: "days"
+      pres_fields: "fields"
+      pres_teams: "teams"
+      pres_categories: "categories"
+      pres_fun: "And a lot of fun !"
 
     register:
       title: "Register"

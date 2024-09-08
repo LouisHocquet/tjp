@@ -1,6 +1,38 @@
 <div class="last-edition">
-  <iframe
-    src="https://www.youtube.com/watch?v=YFKf2Q1P2zI"
-    frameborder="0">
+  <h2><%= t('pages.home.pres_h2') + "..." %></h2>
+  <iframe width="560"
+    <%# height="315" %>
+    src="https://www.youtube.com/embed/YFKf2Q1P2zI?si=kHaUCt8d_L_DqePM"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; clipboard-write; encrypted-media;
+    gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
   </iframe>
+  <%# <div class="last-edition-desc"> %>
+    <ul>
+      <li>
+        <p>
+          <%= "3 " + t('pages.home.pres_days') %>
+        </p>
+      </li>
+      <li>
+        <p>
+          <%= "6 " + t('pages.home.pres_fields') %>
+        </p>
+      </li>
+      <li>
+        <p>
+          <%= "64 " + t('pages.home.pres_teams') %>
+        </p>
+      </li>
+      <li>
+        <p>
+          <%= "4 " + t('pages.home.pres_categories') %>
+        </p>
+      </li>
+    </ul>
+    <p><%= t('pages.home.pres_fun') + " 🏑" %></p>
+  <%# </div> %>
 </div>

@@ -1,8 +1,14 @@
 .banner {
-  height: 80vh;
+  height: 88vh;
   position: relative;
   background-position: bottom;
   background-size: cover;
+  @include media-min($medium) {
+    height: 92vh;
+  }
+  @include media-min($large) {
+    height: 100vh;
+  }
 }
 
 .banner-baseline {
