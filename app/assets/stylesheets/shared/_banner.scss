@@ -12,13 +12,13 @@
 }
 
 .banner-baseline {
-  background-color: rgba($color: $secondary, $alpha: 0.7);
+  background-color: rgba($color: $secondary, $alpha: 0.9);
   display: flex;
   flex-direction: column;
   align-items: start;
   padding: 16px;
   position: absolute;
-  bottom: 16px;
+  bottom: 24px;
   border-radius: 0 8px 8px 0;
   width: 96%;
   @include media-min($medium) {
@@ -35,10 +35,4 @@
     background-color: rgba($color: $secondary, $alpha: 1);
     padding: 24px;
   }
-  // transform: translate(16px, 0);
-  // width: 100%;
-  // .container {
-  //   gap: 0;
-  //   margin-bottom: 24px;
-  // }
 }
