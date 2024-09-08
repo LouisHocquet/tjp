@@ -7,6 +7,9 @@ body {
   min-height: 100vh;
 }
 
+$box-shadow: 8px 6px 1px $primary;
+$box-shadow-light: 4px 3px 1px $primary;
+
 // Breakpoints
 $small: 576px;
 $medium: 768px;
@@ -31,5 +34,18 @@ $x_large: 1200px;
   @include media-min($large) {
     gap: 48px;
     padding-top: 56px;
+  }
+}
+
+.section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media-min($medium) {
+    gap: 32px;
+  }
+  @include media-min($large) {
+    gap: 40px;
   }
 }

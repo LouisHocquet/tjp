@@ -30,16 +30,23 @@
 en:
   pages:
     home:
-      title: "TJP 2025"
+      title: "Home"
+      h1: "TJP 2025"
       banner_days_letter: "D"
       banner_subtitle: "before 31st edition starts, register today!"
       banner_cta: "Register now"
+
       pres_h2: "TJP is"
       pres_days: "days"
       pres_fields: "fields"
       pres_teams: "teams"
       pres_categories: "categories"
       pres_fun: "And a lot of fun !"
+
+      partners_h2: "Our Partners"
+      partners_gold: "Gold"
+      partners_silver: "Silver"
+      partners_bronze: "Bronze"
 
     register:
       title: "Register"
@@ -53,5 +60,4 @@ en:
       title: "Schedule and Results"
   shared:
     in_progress:
-      description: "Site en cours de construction, première version dispo le 31 août 2024"
-      description: "Website in progress, first version will be ready on August 31st 2024"
+      description: "Website in progress"

@@ -8,6 +8,12 @@
   width: 100%;
 }
 
+.navbar-nav {
+  @include media-min($large) {
+    gap: 12px;
+  }
+}
+
 .navbar .navbar-collapse {
   flex-grow: 0;
 }

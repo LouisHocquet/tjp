@@ -1,14 +1,4 @@
 .last-edition {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  @include media-min($medium) {
-    gap: 32px;
-  }
-  @include media-min($large) {
-    gap: 40px;
-  }
   iframe {
     border-radius: 8px;
     width: 100%;
@@ -42,7 +32,7 @@
     width: 66%;
     color: $primary;
     transform: rotate(-1deg);
-    box-shadow: 8px 6px 1px $primary;
+    box-shadow: $box-shadow;
     text-align: center;
     @include media-min($large) {
       flex-grow: 1;
