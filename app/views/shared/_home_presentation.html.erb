@@ -1,16 +1,16 @@
 <div class="last-edition section">
   <h2><%= t('pages.home.pres_h2') + "..." %></h2>
-  <iframe width="560"
-    <%# height="315" %>
-    src="https://www.youtube.com/embed/YFKf2Q1P2zI?si=kHaUCt8d_L_DqePM"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; clipboard-write; encrypted-media;
-    gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-  <%# <div class="last-edition-desc"> %>
+  <div class="last-edition-flex-container">
+    <iframe width="560"
+      <%# height="315" %>
+      src="https://www.youtube.com/embed/YFKf2Q1P2zI?si=kHaUCt8d_L_DqePM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; clipboard-write; encrypted-media;
+      gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
     <ul>
       <li>
         <p>
@@ -33,6 +33,6 @@
         </p>
       </li>
     </ul>
-    <p><%= t('pages.home.pres_fun') + " 🏑" %></p>
-  <%# </div> %>
+  </div>
+  <p><%= t('pages.home.pres_fun') + " 🏑" %></p>
 </div>

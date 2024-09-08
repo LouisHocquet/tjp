@@ -3,6 +3,7 @@
     border-radius: 8px;
     width: 100%;
     height: 220px;
+    // box-shadow: $box-shadow;
     @include media-min($medium) {
       height: 480px;
     }
@@ -11,17 +12,35 @@
     }
   }
 
+  .last-edition-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include media-min($medium) {
+      gap: 32px;
+    }
+    @include media-min($large) {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     align-items: center;
-    @include media-min($large) {
+    @include media-min($medium) {
       flex-direction: row;
-      gap: 24px;
+      gap: 32px;
       flex-wrap: wrap;
+    }
+    @include media-min($large) {
+      flex-direction: column;
+      gap: 32px;
+      flex-wrap: nowrap;
     }
   }
 
@@ -29,14 +48,18 @@
     display: block;
     padding: 12px;
     background: $white;
-    width: 66%;
+    width: 100%;
     color: $primary;
     transform: rotate(-1deg);
     box-shadow: $box-shadow;
     text-align: center;
-    @include media-min($large) {
+    @include media-min($medium) {
       flex-grow: 1;
-      width: 420px;
+      width: 220px;
+      // width: 420px;
+    }
+    @include media-min($large) {
+      flex-grow: 0;
     }
     p {
       margin: 0;
@@ -47,4 +70,6 @@
   p {
     text-align: center;
   }
+
+
 }
