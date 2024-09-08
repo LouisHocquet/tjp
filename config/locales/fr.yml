@@ -1,10 +1,23 @@
 fr:
   pages:
     home:
-      title: "TJP 2025"
+      title: "Accueil"
+      h1: "TJP 2025"
       banner_days_letter: "J"
       banner_subtitle: "avant le début de la 31 ème édition, inscrivez-vous dès maintenant !"
       banner_cta: "Inscription"
+
+      pres_h2: "Le TJP c'est"
+      pres_days: "jours"
+      pres_fields: "terrains"
+      pres_teams: "équipes"
+      pres_categories: "catégories"
+      pres_fun: "Et beaucoup de fun !"
+
+      partners_h2: "Nos partenaires"
+      partners_gold: "Or"
+      partners_silver: "Argent"
+      partners_bronze: "Bronze"
     register:
       title: "Inscription"
     information:
@@ -17,4 +30,4 @@ fr:
       title: "Calendrier et résultats"
   shared:
     in_progress:
-      description: "Site en cours de construction, première version dispo le 31 août 2024"
+      description: "Site en cours de construction"

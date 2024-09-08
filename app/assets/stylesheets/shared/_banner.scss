@@ -3,6 +3,12 @@
   position: relative;
   background-position: bottom;
   background-size: cover;
+  @include media-min($medium) {
+    height: 84vh;
+  }
+  @include media-min($large) {
+    height: 92vh;
+  }
 }
 
 .banner-baseline {

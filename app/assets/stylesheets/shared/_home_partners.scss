@@ -1,0 +1,54 @@
+.home-partners {
+  margin-bottom: 40px;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  @include media-min($medium) {
+    gap: 48px;
+  }
+  @include media-min($large) {
+    gap: 64px;
+  }
+}
+
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+
+  .partner-logo {
+    width: 240px;
+    height: 240px;
+    border-radius: 240px;
+    background-color: lightgray;
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    padding: 4px 8px;
+    top: 0;
+    right: 0;
+    box-shadow: $box-shadow-light;
+  }
+
+}
+
+.gold-partner span {
+  background-color: $gold;
+}
+.silver-partner span {
+  background-color: $silver;
+}
+.bronze-partner span {
+  background-color: $bronze;
+}

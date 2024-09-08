@@ -7,12 +7,8 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding-top: 32px;
-}
+$box-shadow: 8px 6px 1px $primary;
+$box-shadow-light: 4px 3px 1px $primary;
 
 // Breakpoints
 $small: 576px;
@@ -23,5 +19,33 @@ $x_large: 1200px;
 @mixin media-min($_min-width) {
   @media screen and (min-width: $_min-width) {
     &{ @content; }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 40px;
+  @include media-min($medium) {
+    gap: 40px;
+    padding-top: 48px;
+  }
+  @include media-min($large) {
+    gap: 80px;
+    padding-top: 80px;
+  }
+}
+
+.section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include media-min($medium) {
+    gap: 32px;
+  }
+  @include media-min($large) {
+    gap: 40px;
   }
 }
