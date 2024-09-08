@@ -32,8 +32,8 @@ $x_large: 1200px;
     padding-top: 48px;
   }
   @include media-min($large) {
-    gap: 48px;
-    padding-top: 56px;
+    gap: 80px;
+    padding-top: 80px;
   }
 }
 

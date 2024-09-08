@@ -1,13 +1,13 @@
 .banner {
-  height: 88vh;
+  height: 80vh;
   position: relative;
   background-position: bottom;
   background-size: cover;
   @include media-min($medium) {
-    height: 92vh;
+    height: 84vh;
   }
   @include media-min($large) {
-    height: 100vh;
+    height: 92vh;
   }
 }
 

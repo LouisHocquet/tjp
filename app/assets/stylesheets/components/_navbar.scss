@@ -1,7 +1,7 @@
 .navbar {
   justify-content: space-between;
   background: $primary;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
@@ -23,16 +23,38 @@
 }
 
 .locale-switch {
-  background: $body-bg;
+  // background-color: rgba($color: $secondary, $alpha: 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   width: fit-content;
   padding-left: 8px;
   padding-right: 8px;
-  border-radius: 8px;
+  border-radius: 4px;
+  list-style: none;
+  height: 40px;
+  display: flex;
+  align-items: center;
   // @include media-min($)
   // width: 160px;
   // text-align: center;
   a {
-    color: $primary;
+    // color: $primary;
+    color: rgba(255, 255, 255, 0.55) !important;
+
+  }
+
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .dropdown-menu {
+    color: rgba(255, 255, 255, 0.55);
+    background-color: $primary;
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    top: 100%;
+    // right: 0 !important;
+    margin-top: var(--bs-dropdown-spacer);
   }
 
   li {
@@ -40,9 +62,13 @@
   }
 
   ul {
-    border: unset;
-    right:0 !important;
-    left:unset !important;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    left: unset !important;
+    right: 0;
+  }
+
+  .navbar-toggler {
+    border-radius: 4px !important;
   }
 }
