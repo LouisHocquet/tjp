@@ -1,8 +1,10 @@
 fr:
   pages:
     home:
-      title: "Tournoi Jeunes de Pentecôte"
-      counter: "J"
+      title: "TJP 2025"
+      banner_days_letter: "J"
+      banner_subtitle: "avant le début de la 31 ème édition, inscrivez-vous dès maintenant !"
+      banner_cta: "Inscription"
     register:
       title: "Inscription"
     information:
