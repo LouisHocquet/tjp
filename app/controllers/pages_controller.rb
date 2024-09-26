@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    flash[:notice] = t(:hello_flash)
+    # flash[:notice] = "test flash notice on ruby on rails :)"
   end
 
   def register

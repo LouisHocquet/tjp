@@ -5,7 +5,7 @@ fr:
       h1: "TJP 2025"
       banner_days_letter: "J"
       banner_subtitle: "avant le début de la 31 ème édition, inscrivez-vous dès maintenant !"
-      banner_cta: "Inscription"
+      banner_cta: "Pré-inscription 🚀"
 
       pres_h2: "Le TJP c'est"
       pres_days: "jours"
@@ -32,8 +32,9 @@ fr:
     in_progress:
       description: "Site en cours de construction"
 
-  register:
+  registration:
     title: "Pré-inscription"
     description: "Merci de remplir ce formulaire pour vous pré-inscrire au Tournoi Jeunes de Pentecôte.
       Nous recevons chaque année beaucoup de demandes de participation, nous ne pouvons malheureusement accueillir tout le monde.
       Merci donc de noter que ce formulaire n'est qu'une candidature, nous reviendrons vers vous pour confirmer votre inscription."
+    confirmation: "Votre pré-inscription est terminée ! nous reviendrons vers vous rapidement 😊"
