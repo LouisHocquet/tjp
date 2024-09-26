@@ -1,0 +1,15 @@
+<div class="container">
+  <div>
+    <h1><%= t('pages.register.title') %></h1>
+    <p><%= t('register.description') %></p>
+  </div>
+
+  <div>
+    <%= simple_form_for(@registration) do |f| %>
+      <%= f.input :team %>
+      <%= f.input :email %>
+      <%= f.input :message %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

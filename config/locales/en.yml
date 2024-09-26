@@ -34,7 +34,7 @@ en:
       h1: "TJP 2025"
       banner_days_letter: "D"
       banner_subtitle: "before 31st edition starts, register today!"
-      banner_cta: "Register now"
+      banner_cta: "Pre-register now 🚀"
 
       pres_h2: "TJP is"
       pres_days: "days"
@@ -49,7 +49,7 @@ en:
       partners_bronze: "Bronze"
 
     register:
-      title: "Register"
+      title: "Pre-register"
     information:
       title: "Information"
     pictures:
@@ -61,3 +61,10 @@ en:
   shared:
     in_progress:
       description: "Website in progress"
+
+  registration:
+    title: "Pre-register"
+    description: "Please fill in this form to pre-register for the Pentecost Youth Tournament.
+      We receive a large number of applications every year, we are unfortunately unable to accommodate everyone.
+      Please note that this form is only an application. We will come back to you to confirm your registration."
+    confirmation: "Your are now pre-registered ! We will come back to you shortly 😊"
