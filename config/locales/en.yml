@@ -49,7 +49,7 @@ en:
       partners_bronze: "Bronze"
 
     register:
-      title: "Register"
+      title: "Pre-register"
     information:
       title: "Information"
     pictures:
@@ -61,3 +61,9 @@ en:
   shared:
     in_progress:
       description: "Website in progress"
+
+  register:
+    title: "Pre-register"
+    description: "Please fill in this form to pre-register for the Pentecost Youth Tournament.
+      We receive a large number of applications every year, we are unfortunately unable to accommodate everyone.
+      Please note that this form is only an application. We will come back to you to confirm your registration."
