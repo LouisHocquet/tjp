@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_09_26_191743) do
+ActiveRecord::Schema[7.1].define(version: 2024_09_27_151002) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,12 +42,31 @@ ActiveRecord::Schema[7.1].define(version: 2024_09_26_191743) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.integer "year_min"
+    t.integer "year_max"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "categories_registrations", id: false, force: :cascade do |t|
+    t.bigint "category_id", null: false
+    t.bigint "registration_id", null: false
+    t.index ["category_id", "registration_id"], name: "idx_on_category_id_registration_id_0798c30da7"
+    t.index ["registration_id", "category_id"], name: "idx_on_registration_id_category_id_851a8a9e04"
+  end
+
   create_table "registrations", force: :cascade do |t|
-    t.string "team"
+    t.string "club_name"
     t.string "email"
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "country"
+    t.string "firstname"
+    t.string "lastname"
+    t.string "phone"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"

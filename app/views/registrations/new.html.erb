@@ -6,9 +6,13 @@
 
   <div>
     <%= simple_form_for(@registration) do |f| %>
-      <%= f.input :team %>
+      <%= f.input :club_name %>
       <%= f.input :email %>
       <%= f.input :message %>
+
+      <%= f.input :category_ids, as: :check_boxes, collection: @categories,
+      :label_method => lambda { |c| "#{c.name} (#{c.year_min}-#{c.year_max})" } %>
+
       <%= f.submit %>
     <% end %>
   </div>

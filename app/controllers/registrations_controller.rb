@@ -1,6 +1,7 @@
 class RegistrationsController < ApplicationController
   def new
     @registration = Registration.new
+    @categories = Category.all
   end
 
   def create
@@ -19,7 +20,6 @@ class RegistrationsController < ApplicationController
   private
 
   def registration_params
-    params.require(:registration).permit(:team, :email, :message)
+    params.require(:registration).permit(:club_name, :email, :message, category_ids: [])
   end
-
 end
