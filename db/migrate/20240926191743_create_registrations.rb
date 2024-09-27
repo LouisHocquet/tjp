@@ -1,7 +1,7 @@
 class CreateRegistrations < ActiveRecord::Migration[7.1]
   def change
     create_table :registrations do |t|
-      t.string :team
+      t.string :club_name
       t.string :email
       t.text :message
 
