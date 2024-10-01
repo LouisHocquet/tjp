@@ -1,0 +1,50 @@
+<div class="container">
+  <h1><%= t('pages.register.title') %></h1>
+  <%= simple_form_for(@registration) do |f| %>
+    <div>
+      <p><%= t('registration.new.section_contact') %></p>
+      <div class="row">
+        <div class="col">
+          <%= f.input :firstname, placeholder: t('registration.new.firstname') %>
+          <% if @firstname_errors %>
+            <span class="form-error-message"><%= @firstname_errors.first %></span>
+          <% end %>
+        </div>
+        <div class="col">
+          <%= f.input :lastname, placeholder: t('registration.new.lastname'), label: false %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <%= f.input :email, placeholder: t('registration.new.email'), label: false %>
+        </div>
+        <div class="col">
+          <%= f.input :phone, placeholder: t('registration.new.phone'), label: false %>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p><%= t('registration.new.section_club') %></p>
+      <div class="row">
+        <div class="col">
+          <%= f.input :firstname, placeholder: t('registration.new.club_name'), label: false %>
+        </div>
+        <div class="col">
+          <%= f.input :lastname, placeholder: t('registration.new.club_country'), label: false %>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p><%= t('registration.new.section_category') %></p>
+      <div class="row d-flex">
+        <%= f.input :category_ids, as: :check_boxes, collection: @categories, legend_tag: false,
+        :label_method => lambda { |c| "#{t('registration.new.category')}  #{c.name} (#{t('registration.new.born_in')} #{c.year_min}-#{c.year_max})" } %>
+      </div>
+    </div>
+
+
+    <%= f.submit data: { turbo: false}, class: "btn btn-primary px-4 py-3 rounded-3", value: "Pre-register 🚀" %>
+  <% end %>
+</div>

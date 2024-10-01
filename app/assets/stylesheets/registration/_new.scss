@@ -1,0 +1,46 @@
+.new_registration {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media-min($medium) {
+    gap: 32px;
+  }
+  // @include media-min($large) {
+  //   gap: 40px;
+  // }
+
+  .col {
+    margin-bottom: 12px;
+    @include media-min($medium) {
+      margin-bottom: 16px;
+    }
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  .form-control {
+    min-width: 240px;
+    border-radius: 8px;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 24px;
+  }
+}
+
+.form-group-error {
+  .form-control {
+    border-color: rgba(253, 16, 21, 0.3)
+  }
+  span {
+    font-size: smaller;
+    color: $red;
+  }
+}
+
+.category-checkboxes {
+  display: flex;
+  flex-direction: column;
+}
