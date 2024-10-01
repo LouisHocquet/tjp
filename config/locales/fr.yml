@@ -50,7 +50,7 @@ fr:
       section_category: "A quelles catégories voulez-vous participer ? 📝"
       category: "Catégorie"
       born_in: "né en"
-      submit_button: "Me pré-inscrire 🚀"
+      submit_button: "Valider 🚀"
 
 
   activerecord:
