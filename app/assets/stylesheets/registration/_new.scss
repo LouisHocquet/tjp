@@ -1,0 +1,24 @@
+.new_registration {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media-min($medium) {
+    gap: 32px;
+  }
+  // @include media-min($large) {
+  //   gap: 40px;
+  // }
+
+  p {
+    font-weight: bold;
+  }
+
+  .form-control {
+    min-width: 240px;
+    border-radius: 8px;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 24px;
+  }
+}

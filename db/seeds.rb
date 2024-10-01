@@ -16,10 +16,10 @@ Registration.destroy_all
 p "db clean 👌"
 
 p "creating categories ..."
-Category.create(name: "Category U-10", year_min: 2015, year_max: 2016)
-Category.create(name: "Category U-12", year_min: 2013, year_max: 2014)
-Category.create(name: "Category U-14", year_min: 2011, year_max: 2012)
-Category.create(name: "Category U-16", year_min: 2009, year_max: 2010)
+Category.create(name: "U-10", year_min: 2015, year_max: 2016)
+Category.create(name: "U-12", year_min: 2013, year_max: 2014)
+Category.create(name: "U-14", year_min: 2011, year_max: 2012)
+Category.create(name: "U-16", year_min: 2009, year_max: 2010)
 p "#{Category.count} categories created ✅"
 
 p "creating registrations ..."

@@ -14,7 +14,7 @@ $box-shadow-light: 4px 3px 1px $primary;
 $small: 576px;
 $medium: 768px;
 $large: 992px;
-$x_large: 1200px;
+$x_large: 1400px;
 
 @mixin media-min($_min-width) {
   @media screen and (min-width: $_min-width) {
@@ -25,15 +25,15 @@ $x_large: 1200px;
 .container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-top: 40px;
+  gap: 16px;
+  padding-top: 24px;
   @include media-min($medium) {
+    gap: 32px;
+    padding-top: 32px;
+  }
+  @include media-min($x_large) {
     gap: 40px;
     padding-top: 48px;
-  }
-  @include media-min($large) {
-    gap: 80px;
-    padding-top: 80px;
   }
 }
 
