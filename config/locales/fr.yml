@@ -43,11 +43,20 @@ fr:
       firstname: "Prénom"
       lastname: "Nom de famille"
       email: "Adresse email"
-      phone: "Numéro de téléphone"
+      phone: "Téléphone"
       section_club: "Quel est votre club ? 🏑"
       club_name: "Nom du club"
-      club_country: "Pays du club"
+      club_country: "Pays"
       section_category: "A quelles catégories voulez-vous participer ? 📝"
       category: "Catégorie"
       born_in: "né en"
       submit_button: "Me pré-inscrire 🚀"
+
+
+  activerecord:
+    errors:
+      messages:
+        no_blank: "Ne peut pas être vide"
+        invalid_email: "L'email est invalide"
+        invalid_phone: "Le téléphone est invalide"
+        one_category_min: "Sélectionnez au moins une catégorie"

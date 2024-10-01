@@ -76,8 +76,16 @@ en:
       phone: "Phone Number"
       section_club: "Tell us about your club 🏑"
       club_name: "Club name"
-      club_country: "Club country"
+      club_country: "Country"
       section_category: "Which categories do you want to participate in ? 📝"
       category: "Category"
       born_in: "born in"
       submit_button: "Pre-register 🚀"
+
+  activerecord:
+    errors:
+      messages:
+        no_blank: "Cant' be blank"
+        invalid_email: "Invalid email address"
+        invalid_phone: "Invalid Phone Number"
+        one_category_min: "Please select at least 1 category"

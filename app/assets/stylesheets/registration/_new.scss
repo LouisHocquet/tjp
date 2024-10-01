@@ -9,6 +9,13 @@
   //   gap: 40px;
   // }
 
+  .col {
+    margin-bottom: 12px;
+    @include media-min($medium) {
+      margin-bottom: 16px;
+    }
+  }
+
   p {
     font-weight: bold;
   }
@@ -21,4 +28,19 @@
   input[type="submit"] {
     margin-bottom: 24px;
   }
+}
+
+.form-group-error {
+  .form-control {
+    border-color: rgba(253, 16, 21, 0.3)
+  }
+  span {
+    font-size: smaller;
+    color: $red;
+  }
+}
+
+.category-checkboxes {
+  display: flex;
+  flex-direction: column;
 }

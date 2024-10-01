@@ -1,22 +1,43 @@
 <div class="container">
   <h1><%= t('pages.register.title') %></h1>
-  <%= simple_form_for(@registration) do |f| %>
+  <%= form_for(@registration, remote: true) do |f| %>
     <div>
       <p><%= t('registration.new.section_contact') %></p>
       <div class="row">
         <div class="col">
-          <%= f.input :firstname, placeholder: t('registration.new.firstname'), label: false %>
+          <div class="form-group <%= @firstname_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :firstname, placeholder: t('registration.new.firstname'), class: "form-control" %>
+            <% if @firstname_errors %>
+              <span class="form-error-message"><%= @firstname_errors.first %></span>
+            <% end %>
+          </div>
         </div>
         <div class="col">
-          <%= f.input :lastname, placeholder: t('registration.new.lastname'), label: false %>
+          <div class="form-group <%= @lastname_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :lastname, placeholder: t('registration.new.lastname'), class: "form-control" %>
+            <% if @lastname_errors %>
+              <span class="form-error-message"><%= @lastname_errors.first %></span>
+            <% end %>
+          </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col">
-          <%= f.input :email, placeholder: t('registration.new.email'), label: false %>
+          <div class="form-group <%= @email_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :email, placeholder: t('registration.new.email'), class: "form-control" %>
+            <% if @email_errors %>
+              <span class="form-error-message"><%= @email_errors.first %></span>
+            <% end %>
+          </div>
         </div>
         <div class="col">
-          <%= f.input :phone, placeholder: t('registration.new.phone'), label: false %>
+          <div class="form-group <%= @phone_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :phone, placeholder: t('registration.new.phone'), class: "form-control" %>
+            <% if @phone_errors %>
+              <span class="form-error-message"><%= @phone_errors.first %></span>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
@@ -25,19 +46,40 @@
       <p><%= t('registration.new.section_club') %></p>
       <div class="row">
         <div class="col">
-          <%= f.input :firstname, placeholder: t('registration.new.club_name'), label: false %>
+          <div class="form-group <%= @club_name_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :club_name, placeholder: t('registration.new.club_name'), class: "form-control" %>
+            <% if @club_name_errors %>
+              <span class="form-error-message"><%= @club_name_errors.first %></span>
+            <% end %>
+          </div>
         </div>
         <div class="col">
-          <%= f.input :lastname, placeholder: t('registration.new.club_country'), label: false %>
+          <div class="form-group <%= @country_errors ? 'form-group-error' : '' %>">
+            <%= f.text_field :country, placeholder: t('registration.new.club_country'), class: "form-control" %>
+            <% if @country_errors %>
+              <span class="form-error-message"><%= @country_errors.first %></span>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
 
     <div>
       <p><%= t('registration.new.section_category') %></p>
-      <div class="row d-flex">
-        <%= f.input :category_ids, as: :check_boxes, collection: @categories, legend_tag: false,
-        :label_method => lambda { |c| "#{t('registration.new.category')}  #{c.name} (#{t('registration.new.born_in')} #{c.year_min}-#{c.year_max})" } %>
+      <div class="row">
+        <div class="col">
+          <div class="category-checkboxes <%= @category_ids_errors ? 'form-group-error' : '' %>">
+            <%= f.collection_check_boxes(:category_ids, @categories, :id, :label) do |b| %>
+              <div class="form-check">
+                <%= b.check_box class: "form-check-input" %>
+                <%= b.label class: "form-check-label" %>
+              </div>
+            <% end %>
+            <% if @category_ids_errors %>
+              <span class="form-error-message"><%= @category_ids_errors.first %></span>
+            <% end %>
+          </div>
+        </div>
       </div>
     </div>
 
