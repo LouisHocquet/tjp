@@ -1,39 +1,11 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
   pages:
     home:
       title: "Home"
-      h1: "TJP 2025"
-      banner_days_letter: "D"
-      banner_subtitle: "before 31st edition starts, register today!"
+      h1: "TJP 2025 pre-registration are open !"
+      banner_baseline_start: "The 31st edition of TJP will happen"
+      banner_baseline_date: "from June 7th to 9th 2025"
+      banner_baseline_end: "and gather 56 teams for a wonderfull youth hockey celebration !"
       banner_cta: "Pre-register now 🚀"
 
       pres_h2: "TJP is"
@@ -81,6 +53,42 @@ en:
       category: "Category"
       born_in: "born in"
       submit_button: "Submit 🚀"
+
+    info:
+      title: "Pre-registration is now open !"
+      welcome: "Welcome on the TJP 2025 pre-registration form. We look forward to welcoming you, from June 7th to 9th, to this wonderful youth hockey celebration !
+        Friendliness, sharing, and fun will remain the values of TJP 2025! 😊"
+      date: "You have until November 30th 2024 to pre-register."
+      teams: "For this 31st edition, number of teams is limited to 64, equally shared across 4 categories (16 per category).
+        We aim to welcome the greatest number of clubs and saves slots for foreign teams. So each club can register a maximum of 1 team per category. Thus, 4 teams maximum.
+        Then, depending of the number of pre-registrations, we might allow to register more teams."
+      registration: "You can choose between 2 formulas"
+      shootout_title: "Shoot Out"
+      shootout_description: "allows you to participate to the tournament and "
+      shootout_price: "costs 40€ per player and 10€ per coach."
+      penalty_stroke_title: "Penalty Stroke"
+      penalty_stroke_description: "allows you to stay overnight with your equipment and to enjoy breakfasts, dinners and animations."
+      penalty_stroke_price: "It costs 75€ per player and 50€ per coach and any other accompanying person."
+      disclaimer: "Please be aware this is pre-registration step only."
+      next_step: " We will go back to you to confirm your participation to the tournament.
+        And only when we receive your payment, will your registration be complete 😉"
+      wanna_join: "You want to participate to our 2025 edition ? just fill out the form on next page !"
+      cta_button: "Fill out the form 🚀"
+
+    confirmation:
+      title_start: "Pre-registration received"
+      title_end: "✅"
+      recap_contact: "Contact"
+      recap_country: "from"
+      recap_email: "Email"
+      recap_phone: "Phone"
+      recap_team_start: "You pre-registered"
+      recap_team_end: " teams :"
+      description: "Thank you, we will get back to you soon with information about the next steps !"
+      see_you: "See you !"
+      signature: "The TJP organizing team 🐝"
+      cta_button: "Back to home page"
+
 
   activerecord:
     errors:

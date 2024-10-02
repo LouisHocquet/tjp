@@ -1,14 +1,21 @@
 .banner {
   height: 80vh;
-  position: relative;
-  background-position: bottom;
-  background-size: cover;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
   @include media-min($medium) {
     height: 84vh;
   }
   @include media-min($large) {
-    height: 92vh;
+    height: 94vh;
+    flex-direction: row;
   }
+}
+
+.banner-image {
+  background-position: bottom;
+  background-size: cover;
+  flex-grow: 1;
 }
 
 .banner-baseline {
@@ -17,18 +24,18 @@
   flex-direction: column;
   align-items: start;
   padding: 16px;
-  position: absolute;
-  bottom: 24px;
+  // position: absolute;
+  // bottom: 24px;
   border-radius: 0 8px 8px 0;
-  width: 96%;
+  // width: 96%;
   @include media-min($medium) {
-    width: 66%;
+    // width: 66%;
   }
   @include media-min($large) {
     height: 100%;
     justify-content: center;
     /* gap: 16px; */
-    width: 320px;
+    width: 400px;
     right: 0;
     bottom: 0;
     border-radius: 0;

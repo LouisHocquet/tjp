@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
-  get 'registrations/new'
-  get 'registrations/create'
-  get 'registrations/view'
-  get 'registrations/index'
+  # get 'registrations/new'
+  # get 'registrations/create'
+  # get 'registrations/view'
+  # get 'registrations/index'
   # get '/:locale' => 'pages#home'
   scope "(:locale)", locale: /en|fr/ do
     root to: "pages#home"
     resources :registrations
+    get "registration_info", to: "registrations#info", as: :info_registration
+    get "registration_confirmation/:id", to: "registrations#confirmation", as: :confirmation_registration
     get "information", to: "pages#information", as: :information
     get "pictures", to: "pages#pictures", as: :pictures
     get "partners", to: "pages#partners", as: :partners

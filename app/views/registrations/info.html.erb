@@ -1,0 +1,42 @@
+<div class="container">
+  <h1><%= t('registration.info.title') %></h1>
+  <div class="registration_info">
+    <p><%= t('registration.info.welcome') %></p>
+    <p><%= t('registration.info.teams') %></p>
+    <p><%= t('registration.info.registration') %></p>
+    <ul>
+      <li>
+        <strong>
+          <%= t('registration.info.shootout_title') %>
+        </strong>
+        <%= t('registration.info.shootout_description') %>
+        <strong>
+          <%= t('registration.info.shootout_price') %>
+        </strong>
+      </li>
+      <li>
+        <strong>
+          <%= t('registration.info.penalty_stroke_title') %>
+        </strong>
+        <%= t('registration.info.penalty_stroke_description') %>
+        <strong>
+          <%= t('registration.info.penalty_stroke_price') %>
+        </strong>
+      </li>
+    </ul>
+    <div class="alert alert-info">
+      <strong>
+        <%= "#{t('registration.info.disclaimer')}" %>
+      </strong>
+      <%= t('registration.info.next_step') %>
+    </div>
+    <p>
+      <strong>
+        <%= t('registration.info.date') %>
+      </strong>
+    </p>
+    <p><%= t('registration.info.wanna_join') %></p>
+    <%= link_to t('registration.info.cta_button'), new_registration_path, class: "btn btn-primary px-4 py-3 rounded-3" %>
+  </div>
+
+</div>

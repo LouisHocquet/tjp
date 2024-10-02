@@ -1,0 +1,10 @@
+.registration_info {
+  display: flex;
+  flex-direction: column;
+  @include media-min($large) {
+    gap: 16px;
+  }
+  .btn {
+    margin-bottom: 24px;
+  }
+}

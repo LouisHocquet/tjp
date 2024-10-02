@@ -1,4 +1,8 @@
 class RegistrationsController < ApplicationController
+  def info
+
+  end
+
   def new
     @registration = Registration.new
     @categories = Category.all
@@ -23,8 +27,7 @@ class RegistrationsController < ApplicationController
   def create
     @registration = Registration.new(registration_params)
     if @registration.save
-      redirect_to root_path,
-        notice: t('registration.confirmation')
+      redirect_to confirmation_registration_path(@registration)
     else
       redirect_to new_registration_path(
         registration_info: {
@@ -39,6 +42,11 @@ class RegistrationsController < ApplicationController
         }
       )
     end
+  end
+
+  def confirmation
+    @registration = Registration.find(params[:id])
+    @categories = @registration.categories
   end
 
   def view

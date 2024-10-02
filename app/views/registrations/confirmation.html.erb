@@ -1,0 +1,30 @@
+<div class="container">
+  <h1><%= "#{t('registration.confirmation.title_start')} #{@registration.firstname} #{t('registration.confirmation.title_end')}" %></h1>
+  <div class="confirmation_info">
+    <p><strong><%= t('registration.confirmation.recap_contact') %></strong></p>
+    <p>
+      <%= @registration.club_name %> from <%= @registration.country %> </br>
+      <%= t('registration.confirmation.recap_email') %> : <%= @registration.email %> </br>
+      <%= t('registration.confirmation.recap_phone') %> : <%= @registration.phone %>
+    </p>
+    <div>
+      <p>
+        <strong>
+          <%= "#{t('registration.confirmation.recap_team_start')} #{@categories.count} #{t('registration.confirmation.recap_team_end')}" %>
+        </strong>
+      </p>
+      <ul>
+        <% @categories.each do |category| %>
+          <li><%= category.name %></li>
+        <% end %>
+      </ul>
+    </div>
+    <p>
+      <%= t('registration.confirmation.description') %> </br>
+      <%= t('registration.confirmation.see_you') %>
+    </p>
+    <p><%= t('registration.confirmation.signature') %></p>
+    <%= link_to t('registration.confirmation.cta_button'), root_path, class: "btn btn-primary px-4 py-3 rounded-3" %>
+
+  </div>
+</div>

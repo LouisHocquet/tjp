@@ -2,9 +2,10 @@ fr:
   pages:
     home:
       title: "Accueil"
-      h1: "TJP 2025"
-      banner_days_letter: "J"
-      banner_subtitle: "avant le début de la 31 ème édition, inscrivez-vous dès maintenant !"
+      h1: "Les pré-inscriptions pour le TJP 2025 sont ouvertes !"
+      banner_baseline_start: "La 31ème édition du TJP aura lieu"
+      banner_baseline_date: "de 7 au 9 juin 2025"
+      banner_baseline_end: "et réunira 56 équipes pour cette belle fête de la jeunesse du hockey !"
       banner_cta: "Pré-inscription 🚀"
 
       pres_h2: "Le TJP c'est"
@@ -18,6 +19,7 @@ fr:
       partners_gold: "Or"
       partners_silver: "Argent"
       partners_bronze: "Bronze"
+
     register:
       title: "Pré-inscription"
     information:
@@ -51,6 +53,41 @@ fr:
       category: "Catégorie"
       born_in: "né en"
       submit_button: "Valider 🚀"
+
+    info:
+      title: "Les pré-inscriptions sont ouvertes !"
+      welcome: "Bienvenue sur le formulaire de pré-inscription du TJP 2025. Nous avons hâte de vous accueillir, du 7 au 9 juin 2025, pour cette célébration de la jeunesse du hockey !
+        Convivialité, partage et amusement resteront les valeurs du TJP 2024 ! 😊"
+      date: "Vous avez jusqu'au 30 Novembre 2024 pour vous pré-inscrire."
+      teams: "Pour cette 31ème édition, nous accueillerons 64 équipes, également réparties entre 4 catégories (16 par catégorie).
+        Nous voulons laisser la possibilité au plus grand nombre de clubs de participer. C'est pourquoi nous limitons le nombre d'inscriptions pour chaque club à 1 équipe par catégorie d'âge. Soit 4 équipes au maximum.
+        En fonction du nombre de pré-inscriptions, nous autoriserons peut-être d'inscrire plus d'équipes."
+      registration: "Vous avez le choix entre deux formules :"
+      shootout_title: "Shoot Out"
+      shootout_description: "qui vous inscrit au tournoi seulement et "
+      shootout_price: "coûte 40€ par joueur et 10€ par coach."
+      penalty_stroke_title: "Penalty Stroke"
+      penalty_stroke_description: "qui vous permet de dormir sur place avec votre matériel et de profiter des petits déjeuners, dîners et animations."
+      penalty_stroke_price: "Elle coûte 75€ par joueur et 50€ par coach ou toute autre personne accompagnante"
+      disclaimer: "Merci de noter que la pré-inscription ne vaut pas encore inscription."
+      next_step: " Nous reviendrons vers vous rapidement pour confirmer votre participation au tournoi.
+        Et une fois que nous recevrons votre paiement, votre inscription sera pleinement validée 😉"
+      wanna_join: "Vous souhaitez participer à l'édition 2025 ? il vous suffit de remplir le formulaire sur la page suivante !"
+      cta_button: "Remplir le formulaire 🚀"
+
+    confirmation:
+      title_start: "Pré-inscription enregistrée"
+      title_end: " !"
+      recap_contact: "Contact"
+      recap_country: "de"
+      recap_email: "Email"
+      recap_phone: "Téléphone"
+      recap_team_start: "Vous avez pré-inscrit"
+      recap_team_end: " équipes :"
+      description: "Merci, nous reviendrons vers vous rapidement pour les prochaines étapes d'inscription !"
+      see_you: "À très vite !"
+      signature: "L'équipe organisatrice du TJP 🐝"
+      cta_button: "Retour à l'accueil"
 
 
   activerecord:
