@@ -8,7 +8,7 @@ body {
 }
 
 $box-shadow: 8px 6px 1px $primary;
-$box-shadow-light: 4px 3px 1px $primary;
+$box-shadow-light: $primary 0px 1px 4px;
 
 // Breakpoints
 $small: 576px;
@@ -47,5 +47,27 @@ $x_large: 1400px;
   }
   @include media-min($large) {
     gap: 40px;
+  }
+}
+
+.btn {
+  box-shadow: $box-shadow-light;
+}
+
+.btn-container {
+  background-color: $secondary;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  @include media-min($medium) {
+    width: fit-content !important;
+    align-self: end;
+  }
+  .btn {
+    // margin-bottom: 24px;
+    width: 100%;
   }
 }

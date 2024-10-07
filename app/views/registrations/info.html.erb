@@ -36,7 +36,9 @@
       </strong>
     </p>
     <p><%= t('registration.info.wanna_join') %></p>
-    <%= link_to t('registration.info.cta_button'), new_registration_path, class: "btn btn-primary px-4 py-3 rounded-3" %>
+    <div class="btn-container">
+      <%= link_to t('registration.info.cta_button'), new_registration_path, class: "btn btn-primary px-4 py-3 rounded-3" %>
+    </div>
   </div>
 
 </div>

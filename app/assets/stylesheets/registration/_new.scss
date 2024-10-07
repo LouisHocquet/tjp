@@ -28,6 +28,11 @@
   input[type="submit"] {
     margin-bottom: 24px;
   }
+
+  >div:last-of-type {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form-group-error {
