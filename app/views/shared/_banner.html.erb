@@ -1,6 +1,10 @@
 <div class="banner">
   <div class="banner-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
     url('<%= cl_image_path "tjp/tjp_banner" %>')">
+    <div class="banner-incrustation">
+      <%= cl_image_tag "tjp/logo_whc" %>
+      <p><%= t('pages.home.banner_incrustation') %></p>
+    </div>
   </div>
   <div class="banner-baseline" >
     <h1><%= t('pages.home.h1') %></h1>
