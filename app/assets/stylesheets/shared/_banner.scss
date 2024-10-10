@@ -53,24 +53,27 @@
   align-items: center;
   width: fit-content;
   right: 0;
-  bottom: 0;
+  top: 0;
+  transform: rotate(16deg);
   position: absolute;
   padding: 16px;
   @include media-min($medium) {
-    padding: 24px;
+    padding: 32px;
   }
   @include media-min($large) {
-    padding: 32px;
-    right: unset;
-    left: 0;
+    padding: 40px;
   }
   // transform: rotate(12deg);
   img {
-    height: 80px;
-    width: 80px;
-    @include media-min($large) {
+    height: 100px;
+    width: 100px;
+    @include media-min($medium) {
       height: 120px;
       width: 120px;
+    }
+    @include media-min($large) {
+      height: 140px;
+      width: 140px;
     }
   }
   p {
