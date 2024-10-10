@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # get 'registrations/view'
   # get 'registrations/index'
   # get '/:locale' => 'pages#home'
+  root to: "pages#home"
   scope "(:locale)", locale: /en|fr/ do
-    root to: "pages#home"
     resources :registrations
     get "registration_info", to: "registrations#info", as: :info_registration
     get "registration_confirmation/:id", to: "registrations#confirmation", as: :confirmation_registration
