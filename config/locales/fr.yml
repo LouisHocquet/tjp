@@ -4,10 +4,11 @@ fr:
       title: "Accueil"
       h1: "Les pré-inscriptions pour le TJP 2025 sont ouvertes !"
       banner_baseline_start: "La 31ème édition du TJP aura lieu"
-      banner_baseline_date: "de 7 au 9 juin 2025"
+      banner_baseline_date: "les 7, 8 et 9 juin 2025"
       banner_baseline_end: "et réunira 56 équipes pour cette belle fête de la jeunesse du hockey !"
       banner_cta: "Pré-inscription 🚀"
-      banner_incrustation: "7-9 juin 2025"
+      banner_incrustation_title: "TJP 2025"
+      banner_incrustation_date: "7, 8 et 9 juin"
 
       pres_h2: "Le TJP c'est"
       pres_days: "jours"
