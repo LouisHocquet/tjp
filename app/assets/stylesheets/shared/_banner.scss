@@ -48,13 +48,12 @@
   top: 16px;
   transform: rotate(8deg);
   position: absolute;
-  padding: 16px;
   @include media-min($medium) {
-    padding: 32px;
     right: 32px;
     top: 24px;
   }
   @include media-min($large) {
+    padding-bottom: 32px;
     transform: rotate(-8deg);
     top: unset;
     left: 40px;
