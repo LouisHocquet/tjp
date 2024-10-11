@@ -57,12 +57,15 @@ en:
 
     info:
       title: "Pre-registration is now open !"
-      welcome: "Welcome on the TJP 2025 pre-registration form. We look forward to welcoming you, from June 7th to 9th, to this wonderful youth hockey celebration !
+      welcome_1: "Welcome to the TJP 2025 pre-registration form. We look forward to welcoming you"
+      welcome_2: "on June 7th, 8th and 9th 2025"
+      welcome_3: "to this wonderful youth hockey celebration !
         Friendliness, sharing, and fun will remain the values of TJP 2025! 😊"
-      date: "You have until November 30th 2024 to pre-register."
-      teams: "For this 31st edition, number of teams is limited to 64, equally shared across 4 categories (16 per category).
-        We aim to welcome the greatest number of clubs and saves slots for foreign teams. So each club can register a maximum of 1 team per category. Thus, 4 teams maximum.
+      teams_1: "For this 31st edition"
+      teams_2:  "we will welcome 64 teams, equally shared across 4 categories (16 per category)."
+      teams_3: "We aim to welcome the greatest number of clubs and save slots for foreign teams. So each club can register a maximum of 1 team per category. Thus, 4 teams maximum.
         Then, depending of the number of pre-registrations, we might allow to register more teams."
+      date: "You have until November 30th 2024 to pre-register."
       registration: "You can choose between 2 formulas"
       shootout_title: "Shoot Out"
       shootout_description: "allows you to participate to the tournament and "
@@ -71,8 +74,8 @@ en:
       penalty_stroke_description: "allows you to stay overnight with your equipment and to enjoy breakfasts, dinners and animations."
       penalty_stroke_price: "It costs 75€ per player and 50€ per coach and any other accompanying person."
       disclaimer: "Please be aware this is pre-registration step only."
-      next_step: " We will go back to you to confirm your participation to the tournament.
-        And only when we receive your payment, will your registration be complete 😉"
+      next_step: " We will come back to you to confirm your participation to the tournament.
+        And only when we receive your payment will your registration be complete 😉"
       wanna_join: "You want to participate to our 2025 edition ? just fill out the form on next page !"
       cta_button: "Fill out the form 🚀"
 

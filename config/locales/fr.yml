@@ -57,11 +57,14 @@ fr:
 
     info:
       title: "Les pré-inscriptions sont ouvertes !"
-      welcome: "Bienvenue sur le formulaire de pré-inscription du TJP 2025. Nous avons hâte de vous accueillir, du 7 au 9 juin 2025, pour cette célébration de la jeunesse du hockey !
-        Convivialité, partage et amusement resteront les valeurs du TJP 2024 ! 😊"
+      welcome_1: "Bienvenue sur le formulaire de pré-inscription du TJP 2025. Nous avons hâte de vous accueillir"
+      welcome_2: "les 7, 8 et 9 juin 2025"
+      welcome_3: "pour cette célébration de la jeunesse du hockey !
+        Convivialité, partage et amusement resteront les valeurs du TJP 2025 ! 😊"
       date: "Vous avez jusqu'au 30 Novembre 2024 pour vous pré-inscrire."
-      teams: "Pour cette 31ème édition, nous accueillerons 64 équipes, également réparties entre 4 catégories (16 par catégorie).
-        Nous voulons laisser la possibilité au plus grand nombre de clubs de participer. C'est pourquoi nous limitons le nombre d'inscriptions pour chaque club à 1 équipe par catégorie d'âge. Soit 4 équipes au maximum.
+      teams_1: "Pour cette 31ème édition"
+      teams_2:  "nous accueillerons 64 équipes, également réparties entre 4 catégories (16 par catégorie)."
+      teams_3: "Pour que le plus grand nombre de clubs participent, nous limitons le nombre d'inscriptions pour chaque club à 1 équipe par catégorie d'âge. Soit 4 équipes au maximum.
         En fonction du nombre de pré-inscriptions, nous autoriserons peut-être d'inscrire plus d'équipes."
       registration: "Vous avez le choix entre deux formules :"
       shootout_title: "Shoot Out"
